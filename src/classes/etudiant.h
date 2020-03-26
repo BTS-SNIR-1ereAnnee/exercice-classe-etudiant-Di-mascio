@@ -10,16 +10,14 @@ class etudiant
 
 		void getEtudiant();
 		void setEtudiant(string nom);
-		float getNote1();
-		float setNote1(float note);
-		float getNote2();
-		float setNote2(float note);
-		float getMoyenne();
-		float setMoyenne(float note1, float note2);
+		int getNote1();
+		int setNote1(int note);
+		int getNote2();
+		int setNote2(int note);
+		void Moyenne();
 
 	private:
 		string m_nom;
-		float m_note1;
-		float m_note2;
-		float m_moyenne;
+		int m_note1;
+		int m_note2;
 };

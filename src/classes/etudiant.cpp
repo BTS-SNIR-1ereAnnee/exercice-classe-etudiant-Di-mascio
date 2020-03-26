@@ -6,7 +6,9 @@ using namespace std;
 
 etudiant::etudiant()
 {
-
+	m_nom = "test";
+	m_note1=15;
+	m_note2=10;
 }
 
 void etudiant::getEtudiant()
@@ -17,37 +19,32 @@ void etudiant::getEtudiant()
 void etudiant::setEtudiant(string nom)
 {
 	m_nom = nom;
-	cout << m_nom << endl;
 }
 
-float etudiant::getNote1()
+int etudiant::getNote1()
 {	
 	return m_note1;
 }
 
-float etudiant::setNote1(float note)
+int etudiant::setNote1(int note)
 {
 	m_note1=note;
-	cout << m_note1 << endl;
 }
 
-float etudiant::getNote2()
+int etudiant::getNote2()
 {	
 	return m_note2;
 }
 
-float etudiant::setNote2(float note)
+int etudiant::setNote2(int note)
 {
 	m_note2=note;
-	cout << m_note2 << endl;
 }
 
-float etudiant::getMoyenne()
+void etudiant::Moyenne()
 {
-	return m_moyenne;
-}
-
-float etudiant::setMoyenne(float note1, float note2)
-{
-
+	float moyenne;
+	moyenne = m_note1+(m_note2*2);
+	moyenne = moyenne/2;
+	cout << "votre moyenne est de " << moyenne << endl;
 }

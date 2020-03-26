@@ -1,4 +1,7 @@
 #include <iostream>
+#include <string>
+
+using namespace std;
 
 class etudiant
 {
@@ -6,14 +9,15 @@ class etudiant
 		etudiant();
 
 		void getEtudiant();
-		void setEtudiant();
+		void setEtudiant(string nom);
 		float getNote();
-		float setNote();
+		float setNote(float note);
 		float getMoyenne();
-		float setMoyenne();
+		float setMoyenne(float note1, float note2);
 
 	private:
-		char m_etudiant[20];
+		string m_nom;
 		float m_note;
 		float m_moyenne;
+		float stock;
 };
